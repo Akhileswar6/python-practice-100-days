@@ -96,3 +96,13 @@ n=43 value:7 --> 4+3 output:prime"""
 # else:
 #     print("not number")
 
+"""11.write a program to find the frequency of character in string"""
+# n="programming"
+# char="m"
+# count=0
+# for i in n:
+#     if i==char:
+#         count+=1
+# print(count)
+
+
