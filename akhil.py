@@ -105,4 +105,99 @@ for i in n:
         count+=1
 print(count)
 
+"""12.guess the output"""
+n=123
+sum=0
+while n>0:
+    last=n%10
+    sum=sum+last
+    n=n//10
+print(sum)
+
+"""13.guess the output"""
+text1="learning python"
+text2="python"
+if text2 in text1:
+    print("Exists")
+else:
+    print("Not Exists")
+
+"""14.write a program to find fibonacci series"""
+n=6
+if n>0:
+    a=0
+    b=1
+    print(a,b,end=" ")
+    n=n-2
+    if n>2:
+        for i in range(n):
+            temp=a+b
+            a=b
+            b=temp
+            print(temp,end=" ")
+
+"""15.write a program to print prime numbers"""
+n=100
+for i in range(2,n+1):
+    for j in range(2,i):
+        if i%j==0:
+            break
+    else:
+        print(i,end=" ")
+
+"""16.count the number of elements in heights that are not in their expected sorted order"""
+heights=[1,1,4,2,1,3,5]
+expected=[1,1,1,2,3,4,6]
+count=0
+n=len(heights)
+for i in range(n):
+    if heights[i]!=expected[i]:
+        count+=1
+print(count)
+
+"""17.write a program to print duplicate values"""
+my_list=[1,1,23,4,5,6,12,12,9]
+unique=[]
+duplicate=[]
+for i in my_list:
+    if i not in unique:
+        unique.append(i)
+    else:
+        duplicate.append(i)
+print(duplicate)
+
+"""18.write a program to print reverse the given array/list"""
+nums=[1,2,8,4,5,6,7]
+print(nums)
+n=len(nums)-1
+for i in range(n//2):
+    temp=nums[i]
+    nums[i]=nums[n-i]
+    nums[n-i]=temp
+print(nums)
+
+"""19.write a program to find sum of elements at even index positions after reversing an array"""
+arr=[10,20,30,40,50,60]
+n=len(arr)
+sum=0
+arr.reverse()
+for i in range(n):
+    if i%2==0:
+        sum+=arr[i]
+print(sum)
+
+"""20.write a program to find maximum consecutive 1 in list"""
+nums=[1,1,0,1,1,1,1,0]
+count=0
+max=0
+for i in nums:
+    if i==1:
+        count+=1
+        if count>=max:
+            max=count
+    else:
+        max=count
+        count=0
+print(max)
+
 
