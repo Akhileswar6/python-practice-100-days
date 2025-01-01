@@ -208,3 +208,21 @@ else:
     print("Not a leap Year")
 
 
+"""22.Write a program which takes n integer in as input and returns the sum of prime numbers less than n"""
+n=int(input("enter a number:"))
+sum=0
+for i in range(2,n):
+    is_prime= True
+    for j in range(2,int(i**0.5)+1):
+        if (i%j==0):
+            is_prime=False
+            break
+    if is_prime:
+        sum+=i
+print(sum)
+
+
+
+            
+    
+
