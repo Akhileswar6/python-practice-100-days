@@ -200,4 +200,11 @@ for i in nums:
         count=0
 print(max)
 
+"""21.Write a program to find leap year or not"""
+n=int(input("enter a year:"))
+if (n%4==0 and n%100!=0) or (n%400==0):
+    print("Leap Year")
+else:
+    print("Not a leap Year")
+
 
