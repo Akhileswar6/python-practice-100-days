@@ -221,6 +221,37 @@ for i in range(2,n):
         sum+=i
 print(sum)
 
+"""23.Write a program to print median of sorted arrays"""
+nums1=[1,2]
+nums2=[3,4]
+nums=nums1+nums2
+nums.sort()
+n=len(nums)
+if n%2==0:
+    median=(nums[n//2-1]+nums[n//2])/2
+else:
+    median=nums[n//2]
+print(median)
+
+"""24.Write a program to print sum between 0 to 0 from given array."""
+nums=[0,1,0,3,0,2,2,0]
+sums=[]
+current_sum=0
+in_between=False
+for num in nums:
+    if num ==0:
+        if in_between:
+            sums.append(current_sum)
+            current_sum=0
+        in_between=True
+    else:
+        if in_between:
+            current_sum+=num
+print(sums)
+
+
+
+
 
 
             
