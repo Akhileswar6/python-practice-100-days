@@ -250,7 +250,12 @@ for num in nums:
 print(sums)
 
 
-
+"""26.Write a program to print if the characters in str2 is present in str1 or not."""
+str1="abcd"
+str2="abcde"
+for i in str2:
+  if i not in str1:
+    print(i)
 
 
 
