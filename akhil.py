@@ -1,4 +1,4 @@
-"""1.program to find max number without using in-built function"""
+#1.program to find max number without using in-built function
 list=[3,7,9,8,87,32,12]
 max=0
 for i in list:
@@ -6,7 +6,7 @@ for i in list:
         max=i
 print(max)
 
-"""2.find intersection/common elements between two lists"""
+#2.find intersection/common elements between two lists
 nums1=[1,2,2,5]
 nums2=[2,2]
 intersection=[]
@@ -15,7 +15,7 @@ for i in nums1:
         intersection.append(i)
 print(intersection)
 
-"""3.find unique elements without using in-built function"""
+#3.find unique elements without using in-built function
 nums1=[78,73,89,8,6,12,44]
 nums2=[73,78,89,6,8]
 intersection=[]
@@ -24,8 +24,7 @@ for i in nums1:
         intersection.append(i)
 print(intersection)
 
-"""4.program to convert the below string 
-s='11101011110' to CAD"""
+#4.program to convert the below string s='11101011110' to CAD
 S="11101011110"
 count=0
 for i in S:
@@ -35,9 +34,8 @@ for i in S:
         print(chr(64+count),end="")
         count=0
 
-"""5.write a program to convert the below string
-n=43 value:7 --> 4+3 output:prime"""
-n=43
+#5.write a program to convert the below string n=43 value:7 --> 4+3 output:prime
+n=43 
 num=0
 while n>0:
     last = n%10
@@ -50,15 +48,15 @@ for i in range(2,num):
 else:
     print("Prime")
 
-"""6.write a program to convert string in format"""
+#6.write a program to convert string in format
 str = "I AM STRONG"
 reverse = str[::-1]
 words=reverse.split()
 for word in words:
     print(len(word),word)
 
-"""7.write a program to reverse a number"""
-n=765493
+#7.write a program to reverse a number
+n=76549
 reverse=0
 while n>0:
     last=n%10
@@ -66,7 +64,7 @@ while n>0:
     n=n//10
 print(reverse)
 
-"""8.write a program to check given number is palindrome or not"""
+#8.write a program to check given number is palindrome or not
 str="MALAYALAM"
 reverse=str[::-1]
 if str==reverse:
@@ -74,7 +72,7 @@ if str==reverse:
 else:
     print("Not palindrome")
 
-"""9.write a program to find factorial"""
+#9.write a program to find factorial
 n = 6
 fact = 1
 if n >= 0:
@@ -85,7 +83,7 @@ if n >= 0:
             fact = fact * i
 print(fact)
 
-"""10.write a program to find perfect number"""
+#10.write a program to find perfect number
 n=int(input("Enter a number:"))
 perfect=0
 for i in range(1,n):
@@ -96,7 +94,7 @@ if(perfect==n):
 else:
     print("not number")
 
-"""11.write a program to find the frequency of character in string"""
+#11.write a program to find the frequency of character in string
 n="programming"
 char="m"
 count=0
@@ -105,7 +103,7 @@ for i in n:
         count+=1
 print(count)
 
-"""12.guess the output"""
+#12.guess the output
 n=123
 sum=0
 while n>0:
@@ -114,7 +112,7 @@ while n>0:
     n=n//10
 print(sum)
 
-"""13.guess the output"""
+#13.guess the output
 text1="learning python"
 text2="python"
 if text2 in text1:
@@ -122,7 +120,7 @@ if text2 in text1:
 else:
     print("Not Exists")
 
-"""14.write a program to find fibonacci series"""
+#14.write a program to find fibonacci series
 n=6
 if n>0:
     a=0
@@ -136,7 +134,7 @@ if n>0:
             b=temp
             print(temp,end=" ")
 
-"""15.write a program to print prime numbers"""
+#15.write a program to print prime numbers
 n=100
 for i in range(2,n+1):
     for j in range(2,i):
@@ -145,7 +143,7 @@ for i in range(2,n+1):
     else:
         print(i,end=" ")
 
-"""16.count the number of elements in heights that are not in their expected sorted order"""
+#16.count the number of elements in heights that are not in their expected sorted order
 heights=[1,1,4,2,1,3,5]
 expected=[1,1,1,2,3,4,6]
 count=0
@@ -155,7 +153,7 @@ for i in range(n):
         count+=1
 print(count)
 
-"""17.write a program to print duplicate values"""
+#17.write a program to print duplicate values
 my_list=[1,1,23,4,5,6,12,12,9]
 unique=[]
 duplicate=[]
@@ -166,7 +164,7 @@ for i in my_list:
         duplicate.append(i)
 print(duplicate)
 
-"""18.write a program to print reverse the given array/list"""
+#18.write a program to print reverse the given array/list
 nums=[1,2,8,4,5,6,7]
 print(nums)
 n=len(nums)-1
@@ -176,7 +174,7 @@ for i in range(n//2):
     nums[n-i]=temp
 print(nums)
 
-"""19.write a program to find sum of elements at even index positions after reversing an array"""
+#19.write a program to find sum of elements at even index positions after reversing an array
 arr=[10,20,30,40,50,60]
 n=len(arr)
 sum=0
@@ -186,7 +184,7 @@ for i in range(n):
         sum+=arr[i]
 print(sum)
 
-"""20.write a program to find maximum consecutive 1 in list"""
+#20.write a program to find maximum consecutive 1 in list
 nums=[1,1,0,1,1,1,1,0]
 count=0
 max=0
@@ -200,7 +198,7 @@ for i in nums:
         count=0
 print(max)
 
-"""21.Write a program to find leap year or not"""
+#21.Write a program to find leap year or not
 n=int(input("enter a year:"))
 if (n%4==0 and n%100!=0) or (n%400==0):
     print("Leap Year")
@@ -208,7 +206,7 @@ else:
     print("Not a leap Year")
 
 
-"""22.Write a program which takes n integer in as input and returns the sum of prime numbers less than n"""
+#22.Write a program which takes n integer in as input and returns the sum of prime numbers less than n
 n=int(input("enter a number:"))
 sum=0
 for i in range(2,n):
@@ -221,7 +219,7 @@ for i in range(2,n):
         sum+=i
 print(sum)
 
-"""23.Write a program to print median of sorted arrays"""
+#23.Write a program to print median of sorted arrays
 nums1=[1,2]
 nums2=[3,4]
 nums=nums1+nums2
@@ -233,7 +231,7 @@ else:
     median=nums[n//2]
 print(median)
 
-"""24.Write a program to print sum between 0 to 0 from given array."""
+#24.Write a program to print sum between 0 to 0 from given array
 nums=[0,1,0,3,0,2,2,0]
 sums=[]
 current_sum=0
@@ -249,15 +247,36 @@ for num in nums:
             current_sum+=num
 print(sums)
 
-
-"""26.Write a program to print if the characters in str2 is present in str1 or not."""
+#26.Write a program to print if the characters in str2 is present in str1 or not
 str1="abcd"
 str2="abcde"
 for i in str2:
   if i not in str1:
     print(i)
 
+#27.Write a program to find given two strings are anagram or not
+str1="rat"
+str2="tar"
+str1=sorted(str1)
+str2=sorted(str2)
+n=len(str1)
+if len(str1)!=len(str2):
+  print("not anagram")
+else:
+  for i in range(n):
+    if str1[i]!=str2[i]:
+      print("not anagram")
+      break
+    else:
+      print("anagram")
 
+#28.Write a program to find sum of cubes from given range
+a=4
+b=9
+sum_of_cubes=0
+for i in range(a,b+1):
+  sum_of_cubes+=i**3
+print(sum_of_cubes)
 
             
     
