@@ -247,6 +247,21 @@ for num in nums:
             current_sum+=num
 print(sums)
 
+#25.Write a program to print "True" if an array contains 3 consecutive odd numbers or "false"
+nums=[1,2,3,4,5,6,7,8,9]
+n=len(nums)
+count=0
+for i in nums:
+    if i%2!=0:
+        count=count+1
+        if count>=3:
+            print("True")
+            break
+    else:
+        count=0
+if count<3:
+    print("False")
+    
 #26.Write a program to print if the characters in str2 is present in str1 or not
 str1="abcd"
 str2="abcde"
@@ -278,6 +293,71 @@ for i in range(a,b+1):
   sum_of_cubes+=i**3
 print(sum_of_cubes)
 
-            
+#30.Write a program to print "nums=['H','e','l','l','o'] O/P=['o','l','l','e','h']
+nums=['H','e','l','l','o'] 
+n=len(nums)-1
+print(n)
+for i in range(n//2):
+    temp=nums[i]
+    nums[i]=nums[n-i]
+    nums[n-i]=temp
+print(nums)
+
+#31.Given a list of integers, move all zeros to the end while preserving the order of non-zero elements
+nums=[0,1,0,3,12,0,0,6,8]
+n=len(nums)
+left=0
+for i in range(n):
+    if nums[i]!=0:
+        temp=nums[i]
+        nums[i]=nums[left]
+        nums[left]=temp
+        left+=1
+print(nums)
+
+#32.Given a list of integers, search the integer in the given list
+nums=[0,1,2,4,12]
+search=4
+n=len(nums)
+for i in range(n):
+    if nums[i]==search:
+        print(f"{search} found at index {i}")
+        break
+else:
+    print(f"{search} not found in list")
+
+#33.Given a list of integers, find the min element and it's index
+nums=[3,4,2,6,7,1,8]
+n=len(nums)#29.A string is valid if every opening bracket has a matching closing bracket and they are correctly nested.
+s="(]"
+new=""
+n=len(s)
+for i in range(0,n,2):
+    if (s[i]=="(" and s[i+1]==")") or (s[i]=="[" and s[i+1]=="]") or (s[i]=="{" and s[i+1]=="}"):
+        new+=s[i]
+        new+=s[i+1]
+    else:
+        print("False")
+        b
+min=nums[0]
+for i in range(n):
+    if nums[i]<min:
+        min=nums[i]
+        index=i
+print(f"Min element: {min} Index: {index}")
+    
+#34.Write a program to print below output without uisng slicing method
+str="syncfusion"
+n=len(str)
+count=0
+word=""
+for i in range(n):
+    if count==4:
+        print(word)
+        count=1
+        word=''
+    else:
+        count=count+1
+    word=word+str[i]
     
 
