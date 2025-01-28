@@ -360,4 +360,4 @@ for i in range(n):
         count=count+1
     word=word+str[i]
     
-
+print("akhil")
